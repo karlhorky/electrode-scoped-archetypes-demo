@@ -1,6 +1,6 @@
 {
   "name": "@kununu/electrode-archetype-react-app",
-  "version": "2.0.2",
+  "version": "2.0.3-prerelease.1",
   "description": "Electrode NodeJS/React Universal Application Archetype",
   "main": "arch-gulpfile.js",
   "homepage": "http://www.electrode.io",
