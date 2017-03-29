@@ -1,6 +1,6 @@
 {
   "name": "@kununu/electrode-archetype-react-app-dev",
-  "version": "2.0.3-prerelease.2",
+  "version": "2.0.3-prerelease.8",
   "description": "Electrode NodeJS/React Application Archetype (Development)",
   "homepage": "http://www.electrode.io",
   "publishConfig": {
@@ -19,9 +19,10 @@
     "lint": "eslint \"**/**/*.js\""
   },
   "peerDependencies": {
-    "@kununu/electrode-archetype-react-app": "^2.0.0"
+    "@kununu/electrode-archetype-react-app": "^2.0.3-prerelease.2"
   },
   "dependencies": {
+    "@kununu/electrode-webpack-reporter": "^0.2.5-prerelease.1",
     "autoprefixer-stylus": "^0.9.1",
     "babel-cli": "^6.4.5",
     "babel-core": "^6.4.0",
@@ -48,7 +49,6 @@
     "electrode-cdn-file-loader": "^1.0.0",
     "electrode-electrify": "^1.0.0",
     "electrode-gulp-helper": "^1.0.5",
-    "@kununu/electrode-webpack-reporter": "^0.2.4",
     "eslint": "^3.9.1",
     "eslint-config-walmart": "^1.1.0",
     "eslint-plugin-filenames": "^1.1.0",
