@@ -1,3 +1,7 @@
+Demo of scoped packages for Electrode ([electrode-io/electrode#254](https://github.com/electrode-io/electrode/issues/254))
+
+---
+
 <p align="center">
 <a><img src="https://raw.githubusercontent.com/electrode-io/electrode/cc4ea3e1851cee3333ecca08fdbf5534f51b1ae7/samples/universal-react-node/client/images/logo-192x192.png" alt="Electrode Logo"></a>
 <br>
