@@ -1,0 +1,91 @@
+<html style="background:#000000;">
+<body style="background:#000000;">
+  <pre style="color:#d1d1d1;background:#000000;">From <span style="color:#00a800; ">49160270</span>e<span style="color:#00a800; ">20</span>e<span style="color:#00a800; ">62</span>e<span style="color:#00a800; ">7981</span>c<span style="color:#00a800; ">2</span>d<span style="color:#00a800; ">1</span>a<span style="color:#00a800; ">412</span>a<span style="color:#00a800; ">646</span>a<span style="color:#00a800; ">984414</span>ce Mon Sep <span style="color:#00a800; ">17</span> <span style="color:#00a800; ">00</span>:<span style="color:#00a800; ">00</span>:<span style="color:#00a800; ">00</span> <span style="color:#00a800; ">2001</span>
+From: Karl Horky &lt;karl.horky@gmail.com&gt;
+Date: Wed, <span style="color:#00a800; ">29</span> Mar <span style="color:#00a800; ">2017</span> <span style="color:#00a800; ">13</span>:<span style="color:#00a800; ">42</span>:<span style="color:#00a800; ">38</span> +<span style="color:#00a800; ">0200</span>
+Subject: [PATCH] Update dependencies to scoped packages
+
+<span style="color:#008080; ">---</span>
+ gulpfile.js         |  <span style="color:#00a800; ">2</span> +-
+ package.json        | <span style="color:#00a800; ">10</span> ++++++----
+ src/client/.babelrc |  <span style="color:#00a800; ">2</span> +-
+ src/server/.babelrc |  <span style="color:#00a800; ">2</span> +-
+ src/server/index.js |  <span style="color:#00a800; ">2</span> +-
+ <span style="color:#00a800; ">5</span> files changed, <span style="color:#00a800; ">10</span> insertions(+), <span style="color:#00a800; ">8</span> deletions(-)
+
+<span style="color:#008073; ">diff --git a/gulpfile.js b/gulpfile.js</span>
+index a2ee8ce..5ba60eb 100644
+<span style="color:#007997; ">--- a/gulpfile.js</span>
+<span style="color:#007997; ">+++ b/gulpfile.js</span>
+<span style="color:#e34adc; ">@@ -1 +1 @@</span>
+<span style="color:#008080; ">-require("electrode-archetype-react-app")();</span>
+<span style="color:#00c4c4; ">+require("@kununu/electrode-archetype-react-app")();</span>
+<span style="color:#008073; ">diff --git a/package.json b/package.json</span>
+index 24c74b7..236757b 100644
+<span style="color:#007997; ">--- a/package.json</span>
+<span style="color:#007997; ">+++ b/package.json</span>
+<span style="color:#e34adc; ">@@ -33,24 +33,26 @@</span>
+     "heroku-postbuild": "gulp build"
+   },
+   "dependencies": {
+<span style="color:#00c4c4; ">+    "@kununu/electrode-archetype-react-app": "2.0.3-prerelease.2",</span>
+     "bluebird": "^<span style="color:#00a800; ">3</span>.<span style="color:#00a800; ">4</span>.<span style="color:#00a800; ">6</span>",
+     "bootstrap-sass": "<span style="color:#00a800; ">3</span>.<span style="color:#00a800; ">3</span>.<span style="color:#00a800; ">7</span>",
+<span style="color:#008080; ">-    "electrode-archetype-react-app": "kununu/electrode-archetype-react-app#2b22d467b72ba4eb1f792d727c2b2bda1e220788",</span>
+     "electrode-confippet": "^<span style="color:#00a800; ">1</span>.<span style="color:#00a800; ">0</span>.<span style="color:#00a800; ">0</span>",
+     "electrode-react-ssr-caching": "^<span style="color:#00a800; ">0</span>.<span style="color:#00a800; ">1</span>.<span style="color:#00a800; ">3</span>",
+     "electrode-react-webapp": "^<span style="color:#00a800; ">1</span>.<span style="color:#00a800; ">1</span>.<span style="color:#00a800; ">0</span>",
+     "electrode-redux-router-engine": "^<span style="color:#00a800; ">1</span>.<span style="color:#00a800; ">2</span>.<span style="color:#00a800; ">2</span>",
+     "express": "^<span style="color:#00a800; ">4</span>.<span style="color:#00a800; ">0</span>.<span style="color:#00a800; ">0</span>",
+     "font-awesome": "<span style="color:#00a800; ">4</span>.<span style="color:#00a800; ">7</span>.<span style="color:#00a800; ">0</span>",
+<span style="color:#008080; ">-    "kununu-footer": "^2.0.0",</span>
+<span style="color:#00c4c4; ">+    "kununu-footer": "^2.0.3",</span>
+     "kununu-header": "^<span style="color:#00a800; ">2</span>.<span style="color:#00a800; ">0</span>.<span style="color:#00a800; ">0</span>",
+     "kununu-theme": "^<span style="color:#00a800; ">3</span>.<span style="color:#00a800; ">0</span>.<span style="color:#00a800; ">0</span>",
+     "lodash": "^<span style="color:#00a800; ">4</span>.<span style="color:#00a800; ">10</span>.<span style="color:#00a800; ">1</span>",
+     "nukleus": "<span style="color:#00a800; ">5</span>.<span style="color:#00a800; ">0</span>.<span style="color:#00a800; ">3</span>",
+<span style="color:#008080; ">-    "react-bootstrap": "0.30.7"</span>
+<span style="color:#00c4c4; ">+    "react-bootstrap": "0.30.7",</span>
+<span style="color:#00c4c4; ">+    "react": "15.4.2",</span>
+<span style="color:#00c4c4; ">+    "react-dom": "15.4.2"</span>
+   },
+   "devDependencies": {
+<span style="color:#008080; ">-    "electrode-archetype-react-app-dev": "kununu/electrode-archetype-react-app-dev#4c1370226622be6b4588cba1cd6f72566762720e",</span>
+<span style="color:#00c4c4; ">+    "@kununu/electrode-archetype-react-app-dev": "2.0.3-prerelease.8",</span>
+     "gulp": "^<span style="color:#00a800; ">3</span>.<span style="color:#00a800; ">9</span>.<span style="color:#00a800; ">1</span>"
+   }
+ }
+<span style="color:#008073; ">diff --git a/src/client/.babelrc b/src/client/.babelrc</span>
+index e4c6022..81e5da1 100644
+<span style="color:#007997; ">--- a/src/client/.babelrc</span>
+<span style="color:#007997; ">+++ b/src/client/.babelrc</span>
+<span style="color:#e34adc; ">@@ -1,3 +1,3 @@</span>
+ {
+<span style="color:#008080; ">-  "extends": "electrode-archetype-react-app-dev/config/babel/babelrc-client"</span>
+<span style="color:#00c4c4; ">+  "extends": "@kununu/electrode-archetype-react-app-dev/config/babel/babelrc-client"</span>
+ }
+<span style="color:#008073; ">diff --git a/src/server/.babelrc b/src/server/.babelrc</span>
+index ebb9463..bd68994 100644
+<span style="color:#007997; ">--- a/src/server/.babelrc</span>
+<span style="color:#007997; ">+++ b/src/server/.babelrc</span>
+<span style="color:#e34adc; ">@@ -1,3 +1,3 @@</span>
+ {
+<span style="color:#008080; ">-  "extends": "electrode-archetype-react-app-dev/config/babel/babelrc-server"</span>
+<span style="color:#00c4c4; ">+  "extends": "@kununu/electrode-archetype-react-app-dev/config/babel/babelrc-server"</span>
+ }
+<span style="color:#008073; ">diff --git a/src/server/index.js b/src/server/index.js</span>
+index 41c3886..0c089ef 100644
+<span style="color:#007997; ">--- a/src/server/index.js</span>
+<span style="color:#007997; ">+++ b/src/server/index.js</span>
+<span style="color:#e34adc; ">@@ -8,7 +8,7 @@ process.on("SIGINT", () =&gt; {</span>
+
+ const electrodeConfippet = require("electrode-confippet");
+
+<span style="color:#008080; ">-const support = require("electrode-archetype-react-app/support");</span>
+<span style="color:#00c4c4; ">+const support = require("@kununu/electrode-archetype-react-app/support");</span>
+
+ require.extensions[".css"] = () =&gt; {
+   return;
+</pre>
+</body>
+</html>
