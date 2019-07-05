@@ -1,3 +1,5 @@
+# ⚠️ This repo is **abandoned**, **unmaintained** and has **insecure** dependencies.
+
 Demo of scoped packages for Electrode ([electrode-io/electrode#254](https://github.com/electrode-io/electrode/issues/254))
 
 ---
